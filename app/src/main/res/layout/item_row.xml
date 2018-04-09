@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvParty2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/party_name2"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescription2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvParty2"
+            android:text="@string/description"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cbBYOB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescription2"
+            android:clickable="false"/>
+
+
+        <TextView
+            android:id="@+id/tvBYOB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cbBYOB2"
+            android:layout_alignBottom="@+id/cbBYOB2"
+            android:layout_toEndOf="@+id/cbBYOB2"
+            android:layout_toRightOf="@+id/cbBYOB2"
+            android:text="@string/byob"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvBYOB2"
+            android:layout_toEndOf="@+id/tvBYOB2"
+            android:layout_below="@+id/tvDescription2"
+            android:clickable="false"/>
+
+
+        <TextView
+            android:id="@+id/tvBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cbBYOB2"
+            android:layout_alignBottom="@+id/cbBYOB2"
+            android:layout_toEndOf="@+id/cbBar2"
+            android:layout_toRightOf="@+id/cbBar2"
+            android:text="@string/bar"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/delete" />
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
